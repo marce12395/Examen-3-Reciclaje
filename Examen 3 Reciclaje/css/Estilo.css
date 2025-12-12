@@ -1,0 +1,132 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://www.greenteach.es/wp-content/uploads/2023/03/reciclaje-portada.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+}
+
+/* Contenedor principal */
+.main-container {
+    background: rgba(255, 255, 255, 0.92);
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Títulos */
+h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+/* Menú de navegación */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #2e7d32;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+    ul li a {
+        display: block;
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s ease;
+    }
+
+        ul li a:hover:not(.active) {
+            background-color: #1b5e20;
+        }
+
+        ul li a.active {
+            background-color: #66bb6a;
+        }
+
+/* Formularios alineados */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+}
+
+    .form-group label {
+        width: 150px;
+        font-weight: bold;
+        color: #444;
+    }
+
+    .form-group input[type="text"], .aspNetTextBox {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+        transition: border-color 0.3s ease;
+    }
+
+        .form-group input[type="text"]:focus {
+            border-color: #2e7d32;
+            outline: none;
+        }
+
+/* Botones */
+button, .aspNetButton {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px 18px;
+    margin: 0px 5px 8px 5px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    height: 42px;
+}
+
+    button:hover, .aspNetButton:hover {
+        background-color: #1b5e20;
+    }
+
+/* GridView */
+.aspNetGridView {
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+    .aspNetGridView th {
+        background-color: #2e7d32;
+        color: white;
+        padding: 12px;
+        text-align: left;
+    }
+
+    .aspNetGridView td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .aspNetGridView tr:hover {
+        background-color: #f1f1f1;
+    }
