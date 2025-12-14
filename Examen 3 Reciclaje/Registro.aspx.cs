@@ -259,9 +259,9 @@ namespace Examen_3_Reciclaje
                     LlenarGrid();
 
                     if (filasAfectadas > 0)
-                        JavaScriptHelper.MostrarAlerta(this, "datos de material eliminados correctamente.");
+                        JavaScriptHelper.MostrarAlerta(this, "datos del registro eliminados correctamente.");
                     else
-                        JavaScriptHelper.MostrarAlerta(this, "No se encontró el material con ese nombre.");
+                        JavaScriptHelper.MostrarAlerta(this, "No se encontró el registro con ese nombre.");
                 }
                 catch (Exception ex)
                 {

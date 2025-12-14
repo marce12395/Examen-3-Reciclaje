@@ -40,9 +40,9 @@
 
     <div>
         <asp:Button ID="bnombre" runat="server" Text="Guardar" CssClass="aspNetButton" OnClick="bnombre_Click" />
-        <asp:Button ID="bmodificar" runat="server" Text="Modificar " CssClass="aspNetButton" OnClick="bmodificar_Click" />
-        <asp:Button ID="beliminar" runat="server" Text="Eliminar" CssClass="aspNetButton" OnClick="beliminar_Click" />
-        <asp:Button ID="bbuscar" runat="server" Text="Buscar" CssClass="aspNetButton" OnClick="bbuscar_Click" />
+        <asp:Button ID="bmodificar" runat="server" Text="Modificar con el nombre del hogar " CssClass="aspNetButton" OnClick="bmodificar_Click" />
+        <asp:Button ID="beliminar" runat="server" Text="Eliminar por el número de casa" CssClass="aspNetButton" OnClick="beliminar_Click" />
+        <asp:Button ID="bbuscar" runat="server" Text="Buscar por el nombre del hogar" CssClass="aspNetButton" OnClick="bbuscar_Click" />
     </div>
 
     <asp:GridView ID="GridView1" runat="server" CssClass="aspNetGridView" Width="878px"></asp:GridView>

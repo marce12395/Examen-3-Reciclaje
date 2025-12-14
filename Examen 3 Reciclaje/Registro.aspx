@@ -48,9 +48,9 @@
                 <br />
                 <br />
                 <asp:Button ID="Button1" runat="server" Text="Guardar"  CssClass="aspNetButton" OnClick="Button1_Click" />
-                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Modificar" CssClass="aspNetButton"  />
-                <asp:Button ID="Button3" runat="server" Text="Buscar"  CssClass="aspNetButton" OnClick="Button3_Click"/>
-                <asp:Button ID="Button4" runat="server" Text="Eliminar"  CssClass="aspNetButton" OnClick="Button4_Click"  />
+                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Modificar por el ID del registro" CssClass="aspNetButton"  />
+                <asp:Button ID="Button3" runat="server" Text="Buscar por el ID del registro "  CssClass="aspNetButton" OnClick="Button3_Click"/>
+                <asp:Button ID="Button4" runat="server" Text="Eliminar por el ID del registro"  CssClass="aspNetButton" OnClick="Button4_Click"  />
             </div>
             
             <asp:GridView ID="GridView1" runat="server" CssClass="aspNetGridView" Width="904px"></asp:GridView>

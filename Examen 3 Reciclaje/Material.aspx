@@ -39,10 +39,10 @@
 
 <div>
         
-    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Guardar" CssClass="aspNetButton"  /> 
-    <asp:Button ID="Button2" runat="server" Text="Modificar" CssClass="aspNetButton" OnClick="Button2_Click" />
-    <asp:Button ID="Button3" runat="server" Text="Buscar" CssClass="aspNetButton" OnClick="Button3_Click"/>
-    <asp:Button ID="Button4" runat="server" Text="Eliminar" CssClass="aspNetButton" OnClick="Button4_Click" />
+    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Guardar" CssClass="aspNetButton" Width="94px"  /> 
+    <asp:Button ID="Button2" runat="server" Text="Modificar con el nombre del material" CssClass="aspNetButton" OnClick="Button2_Click" Width="267px" />
+    <asp:Button ID="Button3" runat="server" Text="Buscar por nombre del material" CssClass="aspNetButton" OnClick="Button3_Click" Width="235px"/>
+    <asp:Button ID="Button4" runat="server" Text="Eliminar por nombre del material" CssClass="aspNetButton" OnClick="Button4_Click" Width="241px" />
         
     </div>
     

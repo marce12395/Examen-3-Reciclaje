@@ -1,13 +1,12 @@
-﻿using System;
+﻿using Examen_3_Reciclaje.Repositorio;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using static System.Net.Mime.MediaTypeNames;
+using HogarEntidad = Examen_3_Reciclaje.Modelo.Hogar;
 
 namespace Examen_3_Reciclaje
 {
@@ -46,7 +45,7 @@ namespace Examen_3_Reciclaje
         }
 
         protected void bnombre_Click(object sender, EventArgs e)
-            {
+        {
             string connectionString = ConfigurationManager.ConnectionStrings["conexionmam"].ConnectionString;
 
             using (SqlConnection conexion = new SqlConnection(connectionString))
@@ -54,7 +53,7 @@ namespace Examen_3_Reciclaje
                 "INSERT INTO Hogar (Nombre, Correo, NumeroCasa) " +
                 "VALUES (@Nombre, @Correo, @NumeroCasa)", conexion))
             {
-           
+
                 comando.Parameters.AddWithValue("@Nombre", tnombre.Text.Trim());
                 comando.Parameters.AddWithValue("@Correo", tcorreo.Text.Trim());
                 comando.Parameters.AddWithValue("@NumeroCasa", tubicacion.Text.Trim());
@@ -75,7 +74,7 @@ namespace Examen_3_Reciclaje
             }
         }
 
- 
+
 
         protected void beliminar_Click(object sender, EventArgs e)
         {
